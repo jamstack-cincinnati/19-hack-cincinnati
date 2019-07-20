@@ -9,7 +9,7 @@
 2. Install code editor
 3. Forking from a repository
 4. Install NPM
-5. Create a Netlify account with Github
+5. Connect CLI with Netlify
 6. Preview Deploy
 7. Make some cool changes :taco:
 8. Deploy Changes
@@ -74,11 +74,13 @@ Before we get started with Netlify we need to install the command line interface
 
 Download node.js and NPM for your correct operating system [here](https://nodejs.org/en/) 
   
-### Connect GitHub to Netlify
+### Connect CLI to Netlify
 
 1. Install the Netlify CLI on your machine with NPM  with the following command
 ###
 	npm install netlify-cli -g
+
+    If you run into a permission error with this, try typing `sudo chown -R $(whoami) ~/.npm` and run the command again.
 2. Once that is done installing, run the following command and you should be redirected to a Netlify in your default browser. If you are not automatically logged in, make sure you are logged in on Github. 
 ###
 	netlify login
